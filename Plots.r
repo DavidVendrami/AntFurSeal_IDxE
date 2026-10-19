@@ -81,7 +81,7 @@ trnd_bu <- trnd_bu[-c(1:27),]
 trnd <- trnd[-c(1:54),]
 
 ### lifetime repr. succ.
-data <- read.table('SilverSpoon_PAR_dataset_Ftot_Final_Age_JaumeNAfirst_Density_Sex_No21_scaled_MM.txt', h = T)
+data <- read.table('PSdataset.txt', h = T)
 
 pups <- data |>
 	mutate(Pup_survived = replace(Pup_survived, is.na(Pup_survived), 0)) |>
@@ -219,7 +219,7 @@ dev.off()
 ##################################################################################
 ##################################################################################
 ######## Figure 2 - inbreeding (thanks to Martin Stoffel for code):
-data <- read.table('SilverSpoon_PAR_dataset_Ftot_Final_Age_JaumeNAfirst_Density_Sex_No21_scaled_MM.txt', h = T)
+data <- read.table('PSdataset.txt', h = T)
 
 # Froh
 froh <- data |>
@@ -537,9 +537,8 @@ ggsave("No_PR/Figure_2_v5.pdf", Fig3, device = cairo_pdf, width=13, height=6)
 ##################################################################################
 ##################################################################################
 ######## Figure 3, models: 
-data <- read.table('SilverSpoon_PAR_dataset_Ftot_Final_Age_JaumeNAfirst_Density_Sex_No21_scaled_MM.txt', h = T)
-data_pp <- read.table('dataPP_Ftot_Final_Age_JaumeNAfirst_Density_Sex_No21_scaled_MM.txt', h = T)
-data2000 <- read.table('data2000_Ftot_Final_Age_JaumeNAfirst_Density_Sex_No21_scaled_MM.txt', h = T)
+data <- read.table('PSdataset.txt', h = T)
+data_pp <- read.table('PPdataset.txt', h = T)
 load('PP_mod.RData')
 load('PS_mod.RData')
 
@@ -925,7 +924,7 @@ dev.off()
 #####################################################################
 #####################################################################
 ################ Figure 4
-data <- read.table('SilverSpoon_PAR_dataset_Ftot_Final_Age_JaumeNAfirst_Density_Sex_No21_scaled_MM.txt', h = T)
+data <- read.table('PSdataset.txt', h = T)
 results <- read.table('results_fig4.txt', h = T)
 df_fig4 <- read.table("df_fig4.txt", h = T)
 # error bars plotting function									  
