@@ -10,11 +10,11 @@ n_thin <- 25
 snp.matrix <- read.table('Samples_snpMatrix.txt', h = T, row.names = 1)
 
 # Whole dataset
-data <- read.table('SilverSpoon_PAR_dataset_Ftot_Final_Age_JaumeNAfirst_Density_Sex_No21_scaled_MM.txt', h = T)
+data <- read.table('PSdataset.txt', h = T)
 data$animal <- data$SampleID
 
 # NA Age first repr for PP
-data_pp <- read.table('dataPP_Ftot_Final_Age_JaumeNAfirst_Density_Sex_No21_scaled_MM.txt', h = T)
+data_pp <- read.table('PPdataset.txt', h = T)
 data_pp$animal <- data_pp$SampleID
 
 # models
