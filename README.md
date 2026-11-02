@@ -2,4 +2,4 @@ Analysis of ID x E in Antarctic fur seals
 
 Code for analyses and plot generation.
 
-Repo in progress...
+All analyses carried out in R (key packages: brms, tidyverse)
